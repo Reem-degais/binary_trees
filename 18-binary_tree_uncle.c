@@ -14,7 +14,7 @@ binary_tree_t *search_for_uncle(binary_tree_t *node)
 	grand = node->parent;
 	if (grand->left && (grand->left != node))
 		return (grand->left);
-	else (grand->right && (grand->right != node))
+	else if (grand->right && (grand->right != node))
 		return (grand->right);
 	return (NULL);
 }
